@@ -1,0 +1,376 @@
+@font-face {
+  font-family: futura-heavy;
+  src: url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: futura-light;
+  src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+/*
+COLORS:
+
+purple 27212d
+gold c8a645
+white ffffff
+
+blue 93b0ae
+red 9c3934
+
+*/
+
+a:link {
+	color: #93b0ae;
+}
+
+a:visited {
+	color: #93b0ae;
+}
+
+a:hover {
+	color: #9c3934;
+}
+
+a:active {
+	color: #c8a645;
+}
+
+p {
+	font-size: 18px;
+	color: white;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	transition: all 0.3s;
+}
+
+h2 {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+}
+
+h3 {
+	color: #c8a645;
+	font-size: 2em;
+	font-family: "Playfair Display", serif;
+	font-weight: 200;
+	letter-spacing: 5px;
+}
+
+h4 {
+	color: #c8a645;
+	font-size: 2em;
+	font-family: "Playfair Display", serif;
+	font-weight: 200;
+	letter-spacing: 5px;
+}
+
+body {
+	background-color: #27212d;
+	color: #ffffff;
+	min-height: 100%;
+}
+
+hr.subtle {
+	background-color: transparent;
+	max-width: 300px;
+	width: 90%;
+	margin: auto;
+    margin-bottom: auto;
+	border: 0px;
+    border-bottom-color: #c8a645;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+	border-bottom: 1px dashed;
+	opacity: 1;
+	margin-bottom: 15px;
+}
+
+.background {
+	opacity: 0.4;
+	display: block;
+	z-index: -20;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.container {
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 701px) {
+	h1 {
+    	font-size: 46px;
+    	letter-spacing: 30px;
+    }
+    h2 {
+    	font-size: 18px;
+    	letter-spacing: 10px;
+    }
+    h3 {
+    	font-size: 20px;
+    	letter-spacing: 4px;
+    	color: #c8a645;
+    	padding-left: 80px;
+		padding-right: 80px;
+    }
+    h4 {
+    	font-size: 20px;
+    	letter-spacing: 1px;
+    	color: #c8a645;
+    }
+
+    a.button {
+    	font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+    	font-size: 22px;
+    	letter-spacing: 15px;
+    }
+    h2 {
+    	font-size: 14px;
+    	letter-spacing: 5px;
+    }
+    h3 {
+    	font-size: 20px;
+    	letter-spacing: 4px;
+    	color: #c8a645;
+    	padding-left: 20px;
+		padding-right: 20px;
+    }
+    h4 {
+    	font-size: 20px;
+    	letter-spacing: 1px;
+    	color: #c8a645;
+    }
+
+    a.button {
+    	font-size: 14px;
+    }
+}
+
+.title {
+	background-color: #27212d;
+	border-radius: 20px;
+	border-style: dotted;
+	border-color: #c8a645;
+	color: #c8a645;
+	max-width: 100%;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+
+.title h1, h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.getButton {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.aboutButton {
+	margin-right: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.scoreButton {
+	margin-left: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.content {
+	overflow-y: hidden;
+	background-color: none;
+	border-radius: 20px;
+	border-style: dotted;
+	border-color: #c8a645;
+	color: #c8a645;
+	max-width: 66%;
+	max-height: 600px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding: 20px;
+}
+
+.content-internal {
+	width: 100%;
+}
+
+.aboutContent {
+	background-color: #27212d;
+	padding: 20px;
+	text-align: justify;
+	height: auto;
+	max-height: 0;
+	position: relative;
+	top: 0;
+	left: -200%;
+	display: inline-block;
+	max-width: 100%;
+	transition: all 0.3s;
+}
+
+.aboutContent h1, h2, h3, h4{
+	text-align: center;
+	
+}
+
+.aboutContent p {
+	line-height: 30px;
+}
+
+.getContent {
+	margin-bottom: -40px;
+	background-color: #27212d;
+	height: auto;
+	max-height: 600px;
+	position: relative;
+	top: 0;
+	left: 0%;
+	display: inline-block;
+	max-width: 100%;
+	transition: all 0.3s;
+}
+
+.scoreContent {
+	margin-top: -40px;
+	background-color: #27212d;
+	height: auto;
+	max-height: 0px;
+	position: relative;
+	top: 0;
+	left: 200%;
+	display: inline-block;
+	max-width: 100%;
+	transition: all 0.3s;
+}
+
+.content img {
+	max-width: 100%;
+}
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+a.button {
+	padding: 10px;
+	background-color: #27212d;
+	color: #c8a645;
+	letter-spacing: 3px;
+	display: inline-block;
+	font-family: "Playfair Display", serif;
+	border: 1px solid #c8a645;
+	border-radius: 8px;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+a.button:hover {
+	background-color: #c8a645;
+	color: #27212d;
+	transition: all 0.3s;
+}
+
+.action {
+	/*text-align: center;*/
+	/*vertical-align: middle;*/
+}
+
+#table{
+	display: table;
+	position: relative;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+}
+
+.tableCell{
+	max-width:33%;
+	display:table-cell;
+	vertical-align:top;
+	text-align: center;
+	color:white;
+}
+
+
+.background {
+	display: block;
+	position: fixed;
+}

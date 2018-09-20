@@ -1,0 +1,110 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Dance of the Planets</title>
+    <meta name="a solar system sonification app" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+
+    <link rel="shortcut icon" href="img/favi.png" type="image/x-icon">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="css/lightcase.css">
+    <script type="text/javascript" src="js/lightcase.js"></script>
+        <script type="text/javascript">
+    	jQuery(document).ready(function($) {
+    		$('a[data-rel^=lightcase]').lightcase();
+    	});
+    </script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>	
+
+<div class="background">
+	<img src="img/system-bottom-left.jpg">
+</div>
+	<div class="container">
+		<div class="title">
+			<h1>DANCE OF THE PLANETS</h1>
+			<h2>an interactive solar system sonification by DESERT MAGIC</h2>
+		</div>
+		
+		
+		<div id="table">	
+			<div class="tableCell">
+				<div id="aboutButton" class ='aboutButton'>
+					<a href="" class="button">about</a>
+				</div>
+
+				<div id="getButton" class="getButton">
+					<a id="action" class="button" href="">get the app</a>
+				</div>
+
+				<div id="scoreButton" class="scoreButton">
+					<a id="action" class="button" href="">score</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="content" id="mainContent">
+			<div class="content-internal">
+				<div class="getContent" id="getContent">
+				
+					<div class="getVideo">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/TAIwGw1paIc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+
+					<a href="" class="button">Mac</a>
+					<a href="" class="button">iOS</a>
+					<a href="" class="button">Android</a>
+					
+				</div>
+
+				<div class="aboutContent" id="aboutContent">
+
+					<h3>Desert Magic is <a href="http://www.desertmagic.org">ALEX WAND</a>, <a href="http://www.stevenkaivanbetten.com/">STEVEN VAN BETTEN</a>, <a href="http://www.loganhone.com">LOGAN HONE</a>, and <a href="http://www.lukewilliamsmusic.com">LUKE WILLIAMS</a></h3>
+					
+					<p><em>DANCE OF THE PLANETS</em> began as a piece for live performance that we premiered in the small desert town of Blue Diamond, Nevada at Steven's annual music festival, Jam at the Barn. Each performer had a paper-mache planet hat, a guitar, and a click track in their ear that corresponded to their planet's orbit speed. In collaboration with creative coder Luke Williams, we then developed the piece into an interactive application with options to activate, deactivate, and randomize planet rotation to create solar system soundscapes that unfold differently every time. Dance of the Planets is available in the iOS, Mac, and Android app stores. Have a sun-tastic journey! Thanks for listening!</p>
+
+				</div>
+
+				<div class="scoreContent" id="scoreContent">
+					<img src="img/score.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div id='aboutModal' class='modal'>
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>yay!</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/content.js"></script>
+
+	<!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Load our React component. -->
+  <script type="text/babel" src="js/reactContent.js"></script>
+   
+
+</body>
+
+</html>
+
