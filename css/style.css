@@ -39,10 +39,7 @@ a:active {
 	color: #c8a645;
 }
 
-p {
-	font-size: 18px;
-	color: white;
-}
+
 
 h1 {
 	font-family: "Playfair Display", serif;
@@ -65,6 +62,8 @@ h3 {
 
 h4 {
 	color: #c8a645;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	font-size: 2em;
 	font-family: "Playfair Display", serif;
 	font-weight: 200;
@@ -108,10 +107,10 @@ hr.subtle {
 	margin-right: auto;
 }
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 801px) {
 	h1 {
-    	font-size: 46px;
-    	letter-spacing: 30px;
+    	font-size: 36px;
+    	letter-spacing: 25px;
     }
     h2 {
     	font-size: 18px;
@@ -128,14 +127,38 @@ hr.subtle {
     	font-size: 20px;
     	letter-spacing: 1px;
     	color: #c8a645;
-    }
+	}
+
+	p {
+		font-size: 18px;
+		color: #c8a645;
+		line-height: 30px;
+	}
 
     a.button {
-    	font-size: 24px;
-    }
+		font-size: 24px;
+		margin: 5px;
+	}
+	
+	#action {
+		border-color: white;
+		color: white;
+	}
+
+	a.button.bigger {
+		font-size: 3em;
+	}
+
+	.scoreContent img {
+		max-width: 32%;
+	}
+
+	.getContent img {
+		max-width: 50%;
+	}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     h1 {
     	font-size: 22px;
     	letter-spacing: 15px;
@@ -152,18 +175,43 @@ hr.subtle {
 		padding-right: 20px;
     }
     h4 {
-    	font-size: 20px;
+    	font-size: 14px;
     	letter-spacing: 1px;
     	color: #c8a645;
-    }
+	}
+	
+	p {
+		font-size: 12px;
+		color: #c8a645;
+		line-height: 16px;
+	}
 
     a.button {
-    	font-size: 14px;
-    }
+		font-size: 14px;
+		margin: 2px;
+	}
+	
+	#action {
+		border-color: white;
+		color: white;
+	}
+
+	a.button.bigger {
+		font-size: 1em;
+	}
+
+	.scoreContent img {
+		max-width: 49%;
+	}
+
+	.getContent img {
+		max-width: 70%;
+	}
+	
 }
 
 .title {
-	background-color: #27212d;
+	background-color: rgba(39,33,45, 0.9);
 	border-radius: 20px;
 	border-style: dotted;
 	border-color: #c8a645;
@@ -194,34 +242,34 @@ a {
 }
 
 .getButton {
-	margin-left: 10px;
-	margin-right: 10px;
+	/* margin-left: 10px; */
+	/* margin-right: 10px; */
 	display: inline-block;
 	position: relative;
 	margin-bottom: 10px;
 }
 
 .aboutButton {
-	margin-right: 10px;
+	/* margin-right: 10px; */
 	display: inline-block;
 	position: relative;
 }
 
 .scoreButton {
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	display: inline-block;
 	position: relative;
 }
 
 .content {
-	overflow-y: hidden;
-	background-color: none;
+	overflow: hidden;
+	background-color: rgba(39,33,45, 0.9);
 	border-radius: 20px;
 	border-style: dotted;
 	border-color: #c8a645;
 	color: #c8a645;
 	max-width: 66%;
-	max-height: 600px;
+	max-height: 100%;
 	display: block;
 	position: relative;
 	margin-left: auto;
@@ -229,7 +277,7 @@ a {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 60px;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 .content-internal {
@@ -237,7 +285,7 @@ a {
 }
 
 .aboutContent {
-	background-color: #27212d;
+	/* background-color: #27212d; */
 	padding: 20px;
 	text-align: justify;
 	height: auto;
@@ -255,26 +303,43 @@ a {
 	
 }
 
-.aboutContent p {
-	line-height: 30px;
-}
-
 .getContent {
 	margin-bottom: -40px;
-	background-color: #27212d;
 	height: auto;
 	max-height: 600px;
 	position: relative;
 	top: 0;
 	left: 0%;
 	display: inline-block;
+	padding: 20px;
 	max-width: 100%;
 	transition: all 0.3s;
 }
 
+.iframe-container {
+	overflow: hidden;
+	margin: 20px;
+	padding-top: 56.25%;
+	position: relative;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #c8a645;
+  }
+  
+.iframe-container iframe {
+	border: 0;
+	height: 100%;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .scoreContent {
 	margin-top: -40px;
-	background-color: #27212d;
 	height: auto;
 	max-height: 0px;
 	position: relative;
@@ -283,49 +348,8 @@ a {
 	display: inline-block;
 	max-width: 100%;
 	transition: all 0.3s;
+	padding: 20px
 }
-
-.content img {
-	max-width: 100%;
-}
-
- /* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} 
 
 a.button {
 	padding: 10px;
@@ -346,9 +370,18 @@ a.button:hover {
 	transition: all 0.3s;
 }
 
-.action {
-	/*text-align: center;*/
-	/*vertical-align: middle;*/
+a.button#action:hover {
+	background-color: white;
+	color: #27212d;
+	transition: all 0.3s;
+}
+
+.social {
+	position: fixed;
+	left: 15px;
+	bottom: 10px;
+	font-size: 48px;
+	color: #c8a645
 }
 
 #table{
