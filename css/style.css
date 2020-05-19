@@ -135,18 +135,21 @@ hr.subtle {
 		line-height: 30px;
 	}
 
+	.content {
+		max-width: 80%;
+	}
+
     a.button {
 		font-size: 24px;
 		margin: 5px;
 	}
-	
-	#action {
-		border-color: white;
-		color: white;
-	}
 
 	a.button.bigger {
 		font-size: 3em;
+	}
+
+	a.button.smaller {
+		font-size: 1em;
 	}
 
 	.scoreContent img {
@@ -186,17 +189,20 @@ hr.subtle {
 		line-height: 16px;
 	}
 
+	.content {
+		max-width: 100%;
+	}
+
     a.button {
 		font-size: 14px;
 		margin: 2px;
 	}
-	
-	#action {
-		border-color: white;
-		color: white;
-	}
 
 	a.button.bigger {
+		font-size: 1em;
+	}
+	
+	a.button.smaller {
 		font-size: 1em;
 	}
 
@@ -213,8 +219,9 @@ hr.subtle {
 .title {
 	background-color: rgba(39,33,45, 0.9);
 	border-radius: 20px;
-	border-style: dotted;
+	border-style: solid;
 	border-color: #c8a645;
+	border-width: 1px;
 	color: #c8a645;
 	max-width: 100%;
 	display: block;
@@ -225,8 +232,16 @@ hr.subtle {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	padding: 20px;
+	padding-top: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
 }
 
+.title:hover {
+	background-color:  #c8a645;
+	color: rgb(39,33,45);
+	transition: all 0.3s;
+}
 
 .title h1, h2 {
 	margin-top: 10px;
@@ -234,8 +249,10 @@ hr.subtle {
 }
 
 .subtitle {
-
+	margin-top: -10px;
+	margin-bottom: 0px;
 }
+
 
 a {
 	text-decoration: none;
@@ -268,7 +285,6 @@ a {
 	border-style: dotted;
 	border-color: #c8a645;
 	color: #c8a645;
-	max-width: 66%;
 	max-height: 100%;
 	display: block;
 	position: relative;
@@ -324,7 +340,7 @@ a {
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 6px;
-	border-color: #c8a645;
+	border-color: #93b0ae;
   }
   
 .iframe-container iframe {
@@ -370,8 +386,25 @@ a.button:hover {
 	transition: all 0.3s;
 }
 
-a.button#action:hover {
+#active {
+	border-color: white;
+	color: white;
+}
+
+#active:hover {
 	background-color: white;
+	color: #27212d;
+	transition: all 0.3s;
+}
+
+#action {
+	border-color: #93b0ae;
+	color: #93b0ae;
+}
+
+#action:hover {
+	background-color: #9c3934;
+	border-color: #9c3934;
 	color: #27212d;
 	transition: all 0.3s;
 }
