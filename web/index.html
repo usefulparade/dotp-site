@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance of the Planets</title>
+  <script src="webmidi.min.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:description" content="a solar system sonification by Desert Magic and Luke Williams">
+  <meta property="og:image" content="">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="controls">
+      <h1>dance of the planets</h1>
+    </div> -->
+    <div class='game' id='game'></div>
+    <div class='controls'>
+
+        <p class="sliderP" id="volumeP">vol</p>
+          <input type="range" min="0" max="100" value="50" class="slider" id="volumeSlider" oninput="volumeSliderChange()">
+
+        <p class="sliderP" id="bpmP">speed</p>
+          <input type="range" min="120" max="800" value="626" class="slider" id="bpmSlider" oninput="bpmSliderChange()">
+        
+        <p class="sliderP" id="transposeP">transpose</p>
+          <input type="range" min="0" max="24" value="12" class="slider" id="transposeSlider" onmouseover="transposeKeyShow()" onmouseout="transposeKeyHide()" oninput="transposeSliderChange(), transposeKeyShow()">
+          
+        <p class="randomize"><a onclick="randomizer(0.5)">randomize</a></p>
+        
+        
+        <p>interval</p>
+          <select onchange="intervalSelector(this)" id="intervalSelect">
+            <option value="6" >octaves</option>
+            <option value="5" >sevenths</option>
+            <option value="4" >sixths</option>
+            <option value="3" selected>fifths</option>
+            <option value="2">fourths</option>
+            <option value="1">thirds</option>
+            <option value="0">seconds</option>
+          </select>
+        
+        <p>osc type</p>
+          <select onchange="oscSelector(this)" id="osc">
+            <option value="sine" selected>sin</option>
+            <option value="triangle">tri</option>
+            <option value="sawtooth">saw</option>
+            <option value="square">square</option>
+          </select>
+          
+        <p class="sliderP">attack</p>
+          <input type="range" min="0" max="100" value="6" class="slider" id="attackSlider" oninput="attackSliderChange()">
+        
+        <p class="sliderP">release</p>
+          <input type="range" min="0" max="100" value="20" class="slider" id="releaseSlider" oninput="releaseSliderChange()">
+        
+        <p class="sliderP">filter</p>
+          <input type="range" min="0" max="100" value="100" class="slider" id="filterSlider" oninput="filterSliderChange()">
+          
+        <p class="sliderP">resonance</p>
+          <input type="range" min="0" max="100" value="20" class="slider" id="resSlider" oninput="filterSliderChange()">
+        
+      <div id="midiOptions"></div>
+      
+
+      <div id="outro" class="outro">
+        <p>dance of the planets</p>
+        <p>a music tool & solar system sonification by <a href="https://usefulparade.com" target="_blank">Useful Parade</a> and <a href="https://www.desertmagic.org" target="_blank">Desert Magic</a></p>
+        <p>built by <a href="https://lukewilliamsmusic.com">Luke</a> and Alex in may 2020 during the covid quarantine</p>
+        <p>made with <a href="https://p5js.org" target="_blank">p5js</a> and <a href="https://github.com/djipco/webmidi" target="_blank">webmidijs</a></p>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>
